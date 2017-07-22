@@ -1,0 +1,16 @@
+PODS:
+  - SampleClient (0.1.0)
+
+DEPENDENCIES:
+  - SampleClient (from `../`)
+
+EXTERNAL SOURCES:
+  SampleClient:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SampleClient: 519e8e43cdba7ddc9e78caa2b82fa7147d4df514
+
+PODFILE CHECKSUM: 364557076ed9099f4f4abca0f7e8c147b26074a8
+
+COCOAPODS: 1.2.1

@@ -1,0 +1,25 @@
+{
+  "name": "SampleClient",
+  "version": "0.1.0",
+  "summary": "A short description of SampleClient.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jundelacruz1979@gmail.com/SampleClient",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jundelacruz1979@gmail.com": "nmariano@wylog.com"
+  },
+  "source": {
+    "git": "https://github.com/jundelacruz1979@gmail.com/SampleClient.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SampleClient/Classes/**/*.{h,m}",
+  "resources": [
+    "SampleClient/Assets/*.*"
+  ]
+}

@@ -7,7 +7,7 @@
 //
 
 #import "SCLViewController.h"
-
+#import <SampleClient/SampleClient.h>
 @interface SCLViewController ()
 
 @end
@@ -17,7 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    Person *p = [Person new];
+    p.name = @"john";
+    NSLog(@"\n%@", p);
+}
+
+- (IBAction)tappedNext:(id)sender {
+    SpecialViewController *vc = [SpecialViewController splVC];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
