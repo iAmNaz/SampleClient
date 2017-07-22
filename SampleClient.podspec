@@ -35,7 +35,7 @@ s.source_files = 'SampleClient/Classes/**/*.{h,m}'
   s.resources = ['SampleClient/Assets/*.*']
    
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'SampleClient/Classes/**/*.h'
+s.frameworks = 'UIKit', 'MapKit'
+   s.dependency 'AFNetworking', '~> 2.3'
 end

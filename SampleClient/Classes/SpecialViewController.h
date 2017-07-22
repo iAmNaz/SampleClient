@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SpecialViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 +(SpecialViewController*)splVC;
 @end

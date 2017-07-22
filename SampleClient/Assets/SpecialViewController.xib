@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpecialViewController">
             <connections>
+                <outlet property="imageView" destination="ppU-l2-unc" id="imY-Mz-nv1"/>
                 <outlet property="view" destination="iN0-l3-epB" id="km6-d3-cDx"/>
             </connections>
         </placeholder>
@@ -18,7 +19,34 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ppU-l2-unc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sww-5o-VGR">
+                    <rect key="frame" x="16" y="20" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="bpX-sz-8Od"/>
+                        <constraint firstAttribute="height" constant="30" id="cgm-ac-sQY"/>
+                    </constraints>
+                    <state key="normal" title="Close">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dismissSelf:" destination="-1" eventType="touchUpInside" id="EgH-BK-MZt"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ppU-l2-unc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0vA-np-hpi"/>
+                <constraint firstItem="sww-5o-VGR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="M0N-HH-NcK"/>
+                <constraint firstItem="ppU-l2-unc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="T8T-8p-u0P"/>
+                <constraint firstItem="sww-5o-VGR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="d0T-ce-0N7"/>
+                <constraint firstAttribute="trailing" secondItem="ppU-l2-unc" secondAttribute="trailing" id="pCp-r1-G2G"/>
+                <constraint firstAttribute="bottom" secondItem="ppU-l2-unc" secondAttribute="bottom" id="vmq-bL-3dk"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="128.5"/>
         </view>
     </objects>
 </document>

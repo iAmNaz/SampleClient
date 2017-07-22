@@ -13,6 +13,9 @@
 @end
 
 @implementation SpecialViewController
+- (IBAction)dismissSelf:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 +(SpecialViewController*)splVC {
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
